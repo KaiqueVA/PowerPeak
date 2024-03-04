@@ -1,0 +1,8 @@
+../lib/uart_test.c:5:9:_uart_calc_checksum	24	static
+../lib/uart_test.c:19:9:_uart_verify_packet	24	static
+../lib/uart_test.c:51:6:uart_start	16	static
+../lib/uart_test.c:62:6:uart_mac_state	24	static
+../lib/uart_test.c:123:6:uart_send_packet	24	static
+../lib/uart_test.c:139:6:uart_rx_event	16	static
+../lib/uart_test.c:151:6:uart_tx_event	16	static
+../lib/uart_test.c:178:28:uart_received_callback	24	static
