@@ -1,0 +1,2 @@
+../lib/Sensores/Scr/sensores.c:10:6:calcIrms	88	static
+../lib/Sensores/Scr/sensores.c:34:6:calcVrms	2080	static
