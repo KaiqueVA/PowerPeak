@@ -1,7 +1,7 @@
 lib/data_tratament/data_tratament.o: \
  ../lib/data_tratament/data_tratament.c \
  ../lib/data_tratament/data_tratament.h \
- C:/Users/kaiqu/OneDrive/Documentos\ 1/Programas/Microcontroladores/STM32/UPX-3/lib/Sensores/Inc/sensores.h \
+ C:/Users/kaiqu/Desktop/GIT/PowerPeak/UPX-3/lib/Sensores/Inc/sensores.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -34,7 +34,7 @@ lib/data_tratament/data_tratament.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 ../lib/data_tratament/data_tratament.h:
-C:/Users/kaiqu/OneDrive/Documentos\ 1/Programas/Microcontroladores/STM32/UPX-3/lib/Sensores/Inc/sensores.h:
+C:/Users/kaiqu/Desktop/GIT/PowerPeak/UPX-3/lib/Sensores/Inc/sensores.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:

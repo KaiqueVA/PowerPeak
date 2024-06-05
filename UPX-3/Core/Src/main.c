@@ -48,12 +48,10 @@ typedef enum
 /* USER CODE BEGIN PM */
 
 uint8_t flag_ADC_DMA = 0;
-uint16_t iData[512];
-uint16_t vData[512];
-uint16_t adc_dma[1024];
 
 
-data_calcule_t calcule;
+
+
 char *data;
 
 
@@ -105,8 +103,15 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-	uint8_t tamanho, cont = 0;
+ 	uint8_t tamanho, cont = 0;
 	uint16_t i;
+	uint32_t previousTick;
+	uint16_t iData[512];
+	uint16_t vData[512];
+	uint16_t adc_dma[1024];
+	data_calcule_t calcule;
+
+
 
   /* USER CODE END 1 */
 
@@ -182,11 +187,13 @@ int main(void)
 	  		  break;
 
 	  	  case SEND_DATA:
-	  		  HAL_UART_Transmit_DMA(&huart1, (uint8_t*)data, strlen(data));
-	  		  HAL_Delay(500);
-	  		  free(data);
+	  		  if(HAL_GetTick() - previousTick > 10000)
+	  		  {
+	  			  previousTick = HAL_GetTick();
+	  			  HAL_UART_Transmit_DMA(&huart1, (uint8_t*)data, strlen(data));
+	  		  }
+			  free(data);
 	  		  state = ADC_READ;
-	  		  //state = ADC_READ;
 	  		  break;
 
 

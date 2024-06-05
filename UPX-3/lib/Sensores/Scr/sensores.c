@@ -26,7 +26,7 @@ void calcIrms(data_calcule_t *calcule, unsigned int samples, double iCal, uint16
 	}
 
 	iRatio = iCal * ((SUPPLY_VOLTAGE / 1000.0) / (ADC_COUNTS));
-	calcule->iRms = (iRatio * sqrt(sumI / samples)) - 0.4;
+	calcule->iRms = (iRatio * sqrt(sumI / samples));
 
 	sumI = 0;
 }
